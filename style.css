@@ -440,6 +440,7 @@ nav .caret {
     margin-bottom: 20px;
 }
 
+
 .mg-lg {
     margin-top: 10px;
     margin-bottom: 40px;
@@ -677,7 +678,7 @@ a {
 }
 
 p {
-    font-size: 1em;
+    font-size: 1.1em;
 }
 
 .tight-width-whitespace {
@@ -699,9 +700,37 @@ p {
     font-weight: 700;
 }
 
+.container-footer{
+    display: flex;
+    flex-direction: column;
+}
+
 .social {
-    max-width: 400px;
-    margin: auto auto auto auto;
+    width: 100%;
+    margin: auto;
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.container-social{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h4{
+    width: 100%;
+    text-align: center;
+}
+
+.container-social ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
 }
 
 h2 {
@@ -711,6 +740,13 @@ h2 {
     color: #333333!important;
     font-size: 22px;
     line-height: 1.4em;
+}
+
+h3{
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #333333!important;
 }
 
 .med-width-whitespace {
@@ -769,7 +805,7 @@ h4 {
 }
 
 .bgc-atomic-tangerine {
-    background-color: #F3976C;
+    background-color: #FFCC5A;
 }
 
 .tc-white {
