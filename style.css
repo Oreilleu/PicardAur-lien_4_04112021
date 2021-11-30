@@ -31,17 +31,11 @@ a:hover {
     width: 100%;
     clear: both;
     background: 50% 50% no-repeat;
-    padding: 0 50px;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     position: relative;
-}
-
-.bloc .container {
-    padding-left: 0;
-    padding-right: 0;
 }
 
 .bloc-lg {
@@ -54,6 +48,7 @@ a:hover {
 
 .bloc-sm {
     padding: 20px 50px;
+
 }
 
 .bg-center,
@@ -313,13 +308,6 @@ a:hover {
 
 .nav-center .navbar-brand img {
     margin: 0;
-}
-
-.navbar .nav {
-    padding-top: 2px;
-    margin-right: -16px;
-    float: right;
-    z-index: 1;
 }
 
 .nav > li {
@@ -655,10 +643,6 @@ a {
     color: #575757!important;
 }
 
-.container {
-    max-width: 1000px;
-}
-
 .hero-bloc-text {
     font-size: 38px;
 }
@@ -714,23 +698,9 @@ p {
     flex-wrap: wrap;
 }
 
-.container-social{
-    width: 100%;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-}
-
 h4{
     width: 100%;
     text-align: center;
-}
-
-.container-social ul{
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    list-style-type: none;
 }
 
 h2 {
@@ -805,7 +775,32 @@ h4 {
 }
 
 .bgc-atomic-tangerine {
-    background-color: #FFCC5A;
+    background-color: #765200;
+}
+
+.text-contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.text-contact h1{
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.section-contact{
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.form-contact{
+    display: flex;
+    flex-direction: column;
 }
 
 .tc-white {
@@ -861,6 +856,16 @@ h4 {
     background-image: url("img/image-de-presentation.bmp");
 }
 
+body{
+    width: 100%;
+    margin: auto;
+}
+
+.page-container{
+    width: 100%;
+    margin: auto;
+}
+
 @media (max-width: 1024px) {
     .bloc {
         padding-left: 20px;
@@ -876,11 +881,9 @@ h4 {
 }
 
 @media (max-width: 992px) and (min-width: 768px) {
-    .navbar .nav {
-        max-width: 80%
-    }
-    .nav-center.navbar .nav {
-        max-width: 100%
+    .head-contact{
+        width: 100%;
+        display
     }
 }
 
@@ -909,8 +912,7 @@ h4 {
         position: relative;
     }
     .bloc {
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
+        padding: 0;
     }
     .bloc-group,
     .bloc-group .bloc {
@@ -991,6 +993,12 @@ h4 {
         left: -1px;
         right: -1px;
     }
+
+    .head-contact{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
     .navbar-collapse {
         padding: 0;
         overflow-x: hidden;
@@ -1061,6 +1069,12 @@ h4 {
     .blocsapp-device-iphone5 img {
         width: 180px;
         height: 320px;
+    }
+}
+
+@media (max-width: 520px){
+    .head-contact{
+        flex-direction: column;
     }
 }
 
